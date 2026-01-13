@@ -88,3 +88,43 @@ We will avoid leakage: do not use columns that directly encode “Legendary” o
 
 We will keep one row per Pokémon entry as given in the dataset (no external merges).
 
+
+
+RESULT
+
+
+
+Results and Key Insights
+
+Data quality: only Type 2 had missing values; filled missing Type 2 with “None”. No duplicates found.
+
+Class balance: Legendary is imbalanced (65 Legendary vs 735 non-Legendary).
+
+Stat differences: Legendary Pokémon have much higher average Total stats (~637 vs ~417) and higher averages across all individual stats.
+
+Generation pattern: Legendary counts vary by generation, with Gen 3 highest in this dataset.
+
+
+
+\### Visuals
+
+
+
+\*\*Total stats by Legendary\*\*
+
+!\[Total stats by Legendary](reports/figures/total\_by\_legendary.png)
+
+
+
+\*\*Legendary count by generation\*\*
+
+!\[Legendary by generation](reports/figures/legendary\_by\_generation.png)
+
+
+
+\*\*Top 10 Type 1 distribution\*\*
+
+!\[Top 10 Type 1](reports/figures/top10\_type1.png)
+
+
+
