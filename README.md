@@ -58,3 +58,33 @@ Train/test split is reproducible (fixed seed) and preserves class balance (strat
 
 Notebook is readable and explains the “why” behind decisions.
 
+
+
+Data Analysis Problem
+
+Can we prepare a clean, model-ready dataset to predict whether a Pokémon is Legendary using its base stats and typing information?
+
+
+
+Target (y)
+
+Legendary (boolean / 0–1)
+
+
+
+Initial Features (X)
+
+Numeric: HP, Attack, Defense, Sp. Atk, Sp. Def, Speed (and optionally Total)
+
+Categorical: Type 1, Type 2, Generation
+
+
+
+Assumptions / Notes
+
+Type 2 can be missing and will be treated as “None”.
+
+We will avoid leakage: do not use columns that directly encode “Legendary” or obvious identifiers that leak target.
+
+We will keep one row per Pokémon entry as given in the dataset (no external merges).
+
