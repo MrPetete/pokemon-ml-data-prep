@@ -1,0 +1,9 @@
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+.env
+.DS_Store
+
+# keep raw data, but don't commit processed outputs
+data/processed/
+reports/figures/
